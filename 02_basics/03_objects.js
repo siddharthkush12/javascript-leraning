@@ -9,18 +9,42 @@
 
 // Object as literal--------------
 
+const mysymbol=Symbol("key")
+
 const obj={
     name:"siddharth",
     age:22,
+    "full name":"siddharth kushwaha",         // cannot accessby dot use []
     location:"jaipur",
     email:"siddharthkush12@gmail.com",
     isLoggedIn:false,
-    lastLoginDays:["monday","saturday"]
+    lastLoginDays:["monday","saturday"],
+    [mysymbol]:"kush"                        //symbol in object is made by [] and it is also access by [] not by (.)
+
 }
 
 // Ways to access object(2 ways)
 
 console.log(obj.email);
 console.log(obj["email"]);
+
+console.log(obj[mysymbol]);
+
+obj.email="kush12@gmail.com"
+console.log(obj.email);
+
+// Object.freeze(obj);                 // Now changes not apply in object because of "Freeze"
+obj.email="Sidd@gmail.com"
+console.log(obj.email);
+console.log(obj);
+
+// Add functions in object
+
+obj.greeting=function(){
+    console.log(`hello world ${obj.email}`);
+}
+
+console.log(obj.greeting());
+
 
 
