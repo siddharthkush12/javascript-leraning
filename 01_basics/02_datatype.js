@@ -1,7 +1,7 @@
 "use strict";    // treat all JS code as newer version
 
 /*
-    number -> 2^53
+    number ->  2-1074 ( Number.MIN_VALUE ) and 21023 × (2 - 2^52) ( Number.MAX_VALUE )
     bigInt
     string -> ""
     boolean-> true/false
