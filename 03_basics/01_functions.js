@@ -34,3 +34,7 @@ function loginUserMessage2(username="sidd"){
 console.log(loginUserMessage2()); 
 
 
+//    other  ways to make functions
+const add=function(num){
+    return num+5;
+}
