@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    // Method-1(inefficient for large prijects more values more problem)
+    function addLanguage(langName){
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}`;       // traversing (low speed)
+        document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("c++");
+
+    //Method-2(use this)
+    function addlang(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName)); 
+        document.querySelector(".language").appendChild(li);
+    }
+    addlang("ruby");
+    
+
+    // ----------------------Edit any values--------------------
+
+    //Method 1(slow one by using inner html)
+    const secondlang=document.querySelector("li:nth-child(2)")
+    //secondlang.innerHTML="Kotlin";
+
+    //method 2(best one)
+    const newli=document.createElement('li');
+    newli.textContent="kotlin";
+    secondlang.replaceWith(newli);
+
+    //method 3
+    const first=document.querySelector("li:first-child");
+    first.outerHTML="<li>Typescript</li>"
+
+    //-------------------remove elements------------------------
+
+    //method 1
+    const lastlang=document.querySelector("li:last-child");
+    lastlang.remove()
+    
+
+</script>
+</html>
