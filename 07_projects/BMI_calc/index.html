@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>BMI Calculator</h1>
+        <form>
+            <p><label>Height in CM:</label><input type="text" id="height" placeholder="Enter Height"></p>
+            <p><label>Weigth in KG:</label><input type="text" id="weight" placeholder="Enter Weight"></p>
+            <button>Calculate</button>
+            <div id="result"></div>
+            <div id="guide">
+                <h3>BMI weigth guide</h3>
+                <p id="under-weight">Under Weigth = Less than 18.6</p>
+                <p id="normal">Normal Weigth = 18.6 and 24.9</p>
+                <p id="over-weight">OverWeigth = Greater than 24.9</p>
+            </div>
+        </form>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
