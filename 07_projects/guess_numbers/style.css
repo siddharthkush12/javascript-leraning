@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    line-height: 1.6;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    color: black;
+}
+
+.main{
+    background-color: rgb(78, 199, 199);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 12px;
+    border: 3px dotted black;
+}
+
+h1{
+    color: rgb(15, 27, 2);
+    font-size: 50px;
+}
+
+p{
+    display: block;
+    padding: 3px;
+    margin: 1px;
+}
+
+#heading2{
+    font-size: 38px;
+}
+
+label{
+    display: block;
+}
+
+#box{
+    padding: 10px;
+    border: 4px double black;
+    border-radius: 8px;
+    width:200px;
+}
+
+button{
+    padding:9px;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 5px;
+    width:120px;
+}

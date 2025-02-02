@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Number Guessing Game</h1>
+        <p>Try and guess a random number between 1 and 10.</p>
+        <p>You have 10 attemp to guess the right number.</p>
+        <p id="heading2">Guess a number</p>
+        <input type="number" placeholder="Enter a number" id="box">
+        <div class="result"></div>
+        <button id="btn">Submit guess</button>
+        <div class="resultPara">
+        <label>previous guess:<span class="guesses"></span></label>
+        <label>Guesses Remaining:<span class="count">10</span></label>
+        <p class="lowOrHigh"></p>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
